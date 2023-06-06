@@ -2,11 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b926a88753.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form>
+        <div>
+          <label>Day</label>
+          <input type="text" placeholder="DD" class="day input" />
+          <label class="error" id="day-error"></label>
+        </div>
+        <div>
+          <label>Month</label>
+          <input type="text" placeholder="MM" class="month input" />
+          <label class="error" id="month-error"></label>
+        </div>
+        <div>
+          <label>Year</label>
+          <input type="text" placeholder="YYYY" class="year input" />
+          <label class="error" id="year-error"></label>
+        </div>
+        <div>
+          <input type="submit" value="submit" class="submit-button" />
+          <i class="fas fa-sharp fa-solid fa-arrow-down arrow"></i>
+        </div>
+      </form>
+      <div class="result">
+        <h2><span class="years">- -</span> years</h2>
+        <h2><span class="months">- -</span> months</h2>
+        <h2><span class="days">- -</span> days</h2>
+      </div>
+    </div>
+  </body>
   <script src="app.js"></script>
 </html>
